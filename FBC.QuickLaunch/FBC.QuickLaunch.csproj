@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<FileVersion>$(Version)</FileVersion>
 		<Authors>Fatih Bahceci</Authors>
 		<Copyright>© 2024 Fatih Bahceci</Copyright>
@@ -41,6 +41,8 @@
 date: DD.MM.YYYY | name: Project Name | version: X.X.X.XXX | author: Author name or alias
     [XX] Description
 
+date: 14.10.2024 | name: FBC.QuickLaunch | version: 1.0.1 | author: Fatih Bahceci
+	[BG] TrayIcon->Clone() method changed to json serialization/deserialization.
 date: 13.10.2024 | name: FBC.QuickLaunch | version: 1.0.0 | author: Fatih Bahceci
 	[EN] First release of the project.
 -->

@@ -2,6 +2,8 @@
 using System.Drawing;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace FBC.QuickLaunch
 {
@@ -185,15 +187,7 @@ namespace FBC.QuickLaunch
 
         public TrayIcon Clone()
         {
-            return new TrayIcon
-            {
-                AppPath = AppPath,
-                AppTitle = AppTitle,
-                AppIcon = AppIcon,
-                AppArguments = AppArguments,
-                IsSeparator = IsSeparator,
-                RunAsAdmin = RunAsAdmin
-            };
+           return JsonSerializer.Deserialize<TrayIcon>(JsonSerializer.Serialize(this))!;
         }
 
         public Image? GetIcon()
